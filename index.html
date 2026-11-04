@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Lindhu Nuril Rahmatdanto, software developer and cybersecurity learner.">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Lindhu Nuril — Portfolio</title>
+</head>
+<body>
+    <div class="intro-screen" id="introScreen">
+    <div class="intro-terminal">
+        <span class="intro-prompt">root@Rahmad:~$</span>
+        <span id="introTyping"></span>
+        <span class="intro-cursor">_</span>
+    </div>
+</div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#home" aria-label="Lindhu Nuril home">root@Rahmad<span>~</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+                <a href="#home">Home</a>
+                <a href="#about">Who Am I</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero section-shell" id="home">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">root@Rahmad:~$ whoami</p>
+                    <p class="hero-kicker">When skills and mom's prayer meet their vessel.</p>
+                    <h1>Lindhu<br><span>Nuril</span></h1>
+                    <div class="typing-line" aria-live="polite">
+                        <span class="prompt">&gt;</span>
+                        <span id="typing">Software Developer</span><span class="cursor" aria-hidden="true">_</span>
+                    </div>
+                    <p class="hero-description">I build practical web experiences, explore software engineering, and keep learning how technology can solve meaningful problems.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">View projects <span>↘</span></a>
+                        <a class="button button-secondary" href="#contact">Contact me <span>↗</span></a>
+                    </div>
+                </div>
+
+                <button class="portrait-card" type="button" aria-label="Reveal Lindhu Nuril's profile photo">
+                    <img src="assets/image.png" alt="Portrait of Lindhu Nuril Rahmatdanto">
+                    <span class="portrait-overlay">
+                        <span class="portrait-hint">Hover or tap to reveal</span>
+                        <span class="portrait-status">[ protected image ]</span>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <section class="section-shell" id="about">
+            <div class="container split-section">
+                <div class="section-heading">
+                    <p class="section-label">~/about</p>
+                    <h2>A little about<br><span>who I am.</span></h2>
+                </div>
+                <div class="about-content">
+                    <p class="lead">I'm a gentleman named Lindhu Nuril Rahmatdanto, a curious builder who enjoys turning ideas into useful software.</p>
+                    <p>I am interested in web development, cybersecurity, Linux, and the systems behind the interfaces people use every day. I like learning broadly, experimenting with technology, and improving a project one thoughtful detail at a time.</p>
+                    <div class="identity-panel">
+                        <p class="terminal-label">SELECT AN IDENTITY:</p>
+                        <div class="identity-list" role="list">
+                            <button class="identity-btn active" type="button" data-identity="0">Polyglot</button>
+                            <button class="identity-btn" type="button" data-identity="1">Software Developer</button>
+                            <button class="identity-btn" type="button" data-identity="2">Cybersecurity Learner</button>
+                            <button class="identity-btn" type="button" data-identity="3">Linux Explorer</button>
+                            <button class="identity-btn" type="button" data-identity="4">Larp of All Trades</button>
+                            <button class="identity-btn" type="button" data-identity="5">Handsome Man</button>
+                        </div>
+                        <div class="terminal-window" aria-live="polite">
+                            <div class="terminal-bar"><span></span><span></span><span></span><strong>root@Rahmad:~</strong></div>
+                            <p class="terminal-command">root@Rahmad:~$ whoami</p>
+                            <p id="identity-output">A curious learner who enjoys speaking both human and programming languages.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-shell section-muted" id="skills">
+            <div class="container">
+                <div class="section-heading section-heading-wide">
+                    <p class="section-label">~/skills</p>
+                    <h2>Tools I use to<br><span>make things work.</span></h2>
+                </div>
+                <div class="skills-layout">
+                    <div class="skill-group">
+                        <h3>Languages</h3>
+                        <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java</span><span>Python</span><span>Kotlin</span></div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Development</h3>
+                        <div class="tag-list"><span>Web Development</span><span>Flask</span><span>REST API</span><span>Git</span><span>Linux</span></div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Data &amp; security</h3>
+                        <div class="tag-list"><span>SQL</span><span>PostgreSQL</span><span>MySQL</span><span>SQLite</span><span>JWT</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-shell" id="projects">
+            <div class="container">
+                <div class="section-heading section-heading-wide project-heading">
+                    <p class="section-label">~/projects</p>
+                    <h2>Things I've built,<br><span>explored, and tried.</span></h2>
+                    <p class="section-intro">A small collection of projects from my development journey. Each one is a chance to learn something new and make the next build better.</p>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-top"><span class="project-number">01</span><span class="project-status">In progress</span></div>
+                        <h3>Nina Rasa</h3>
+                        <p>A restaurant web application for exploring menus, placing orders, and reserving tables.</p>
+                        <div class="project-footer"><div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><span class="project-arrow">↗</span></div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-top"><span class="project-number">02</span><span class="project-status">In progress</span></div>
+                        <h3>Personal Portfolio</h3>
+                        <p>A responsive portfolio for documenting my technical skills, development journey, and experiments.</p>
+                        <div class="project-footer"><div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><span class="project-arrow">↗</span></div>
+                    </article>
+            </div>
+        </section>
+
+        <section class="section-shell section-muted" id="contact">
+            <div class="container contact-layout">
+                <div class="section-heading">
+                    <p class="section-label">~/contact</p>
+                    <h2>Have a talk,<br><span>shall we?</span></h2>
+                    <p class="section-intro">Find me across the digital world. Feel free to explore my profiles or start a conversation.</p>
+                </div>
+                <div class="terminal-window contact-terminal">
+                    <div class="terminal-bar"><span></span><span></span><span></span><strong>root@Rahmad:~/contact</strong></div>
+                    <div class="contact-content">
+                        <p class="terminal-command">root@Rahmad:~$ ./connect.sh</p>
+                        <p class="terminal-muted">Establishing connection...</p>
+                        <div class="social-links">
+                            <a class="social-link" href="https://www.instagram.com/lindwnrl/" target="_blank" rel="noopener noreferrer"><span>[02]</span><strong>Instagram</strong><small>@lindwnrl</small><b>↗</b></a>
+                            <a class="social-link" href="https://www.linkedin.com/in/lindhu-nuril-418b15387/" target="_blank" rel="noopener noreferrer"><span>[03]</span><strong>LinkedIn</strong><small>Professional profile</small><b>↗</b></a>
+                            <a class="social-link" href="https://github.com/lindwnrl" target="_blank" rel="noopener noreferrer"><span>[04]</span><strong>GitHub</strong><small>My repositories</small><b>↗</b></a>
+                        </div>
+                        <p class="signature">root@Rahmad:~$ echo "Thanks for visiting."<br><span>Thanks for visiting.</span></p>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner"><span>© 2026 Lindhu Nuril Rahmatdanto</span><a href="#home">Back to top ↑</a></div>
+    </footer>
+
+    <script src="assets/Script.js"></script>
+</body>
+</html>
